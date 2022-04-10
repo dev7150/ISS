@@ -2,9 +2,10 @@ import requests
 from datetime import datetime
 import smtplib
 import time
+import os
 
 MY_EMAIL = "autoapimate@gmail.com"
-MY_PASSWORD = "Abcd1234%"
+MY_PASSWORD = os.environ.get("MY_PASSWORD")
 MY_LAT = -37.813629 # Your latitude
 MY_LONG = 144.963058 # Your longitude
 
